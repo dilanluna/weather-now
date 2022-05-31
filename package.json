@@ -1,13 +1,20 @@
 {
   "name": "weather-now",
+  "private": true,
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
+  "author": "Dylan Luna <me@dilanluna.com>",
+  "license": "MIT",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilanluna/weather-now.git"
   },
   "dependencies": {
     "expo": "~45.0.0",
@@ -23,6 +30,5 @@
     "@types/react-native": "~0.66.13",
     "prettier": "^2.6.2",
     "typescript": "~4.3.5"
-  },
-  "private": true
+  }
 }
