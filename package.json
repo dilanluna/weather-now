@@ -17,6 +17,9 @@
     "test:backend": "npm test --workspace backend",
     "build:backend": "npm run build --workspace backend"
   },
+  "dependencies": {
+    "openweathermap-api-client": "^1.0.3"
+  },
   "devDependencies": {
     "@types/jest": "^27.5.1",
     "jest": "^28.1.0",
