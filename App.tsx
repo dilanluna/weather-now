@@ -1,6 +1,7 @@
+import Home from '@screens/home';
 import AppLoading from 'expo-app-loading';
+import { useColorScheme } from 'react-native';
 import { DarkTheme, LightTheme } from '@constants';
-import { Text, useColorScheme, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -10,12 +11,6 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from '@expo-google-fonts/inter';
-
-const Home = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={{ fontFamily: 'Inter_700Bold' }}>Home</Text>
-  </View>
-);
 
 const Stack = createNativeStackNavigator();
 
