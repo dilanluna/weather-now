@@ -10,6 +10,7 @@ module.exports = function (api) {
             '@assets': './assets',
             '@screens': './src/screens',
             '@features': './src/features',
+            '@contexts': './src/contexts',
             '@constants': './src/constants',
             '@components': './src/components',
           },

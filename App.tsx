@@ -2,6 +2,7 @@ import Home from '@screens/home';
 import AppLoading from 'expo-app-loading';
 import { useColorScheme } from 'react-native';
 import { DarkTheme, LightTheme } from '@constants';
+import LocationProvider from '@contexts/location-context';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -27,15 +28,17 @@ export default function App() {
   }
 
   return (
-    <SafeAreaProvider>
-      <NavigationContainer theme={scheme === 'dark' ? DarkTheme : LightTheme}>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen
-            name="Home"
-            component={Home}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaProvider>
+    <LocationProvider>
+      <SafeAreaProvider>
+        <NavigationContainer theme={scheme === 'dark' ? DarkTheme : LightTheme}>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+              name="Home"
+              component={Home}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </SafeAreaProvider>
+    </LocationProvider>
   );
 }
