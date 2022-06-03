@@ -55,7 +55,7 @@ export default function WeatherStats({
         <Feather
           size={28}
           color="white"
-          name="umbrella"
+          name="thermometer"
         />
         <Text
           style={styles.text}
