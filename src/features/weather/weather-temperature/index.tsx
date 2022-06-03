@@ -17,14 +17,14 @@ export default function WeatherTemperature({
       <Text
         variant="large-title"
         style={[styles.text, styles.mainTemperature]}>
-        {main}°
+        {Math.round(main)}°
       </Text>
       <View style={styles.rightAlignedContainer}>
         <View style={styles.minMaxTemperatureContainer}>
           <Text
             style={styles.text}
             variant="title-3">
-            {min}°
+            {Math.round(min)}°
           </Text>
           <Text
             style={styles.text}
@@ -38,7 +38,7 @@ export default function WeatherTemperature({
           <Text
             style={styles.text}
             variant="title-3">
-            {max}°
+            {Math.round(max)}°
           </Text>
           <Text
             style={styles.text}
