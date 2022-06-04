@@ -25,7 +25,8 @@
         "backgroundImage": "./assets/adaptive-background.png",
         "backgroundColor": "#3A92E2"
       },
-      "versionCode": 1
+      "versionCode": 1,
+      "package": "com.dilanluna.weathernow"
     },
     "web": {
       "favicon": "./assets/favicon.png"
