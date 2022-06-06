@@ -39,8 +39,6 @@ export default function Home() {
 
   return (
     <BackgroundGradient>
-      <StatusBar style="inverted" />
-
       <SafeAreaView>
         {current && (
           <ScrollView contentContainerStyle={styles.container}>
