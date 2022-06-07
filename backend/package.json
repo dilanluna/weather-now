@@ -2,7 +2,7 @@
   "name": "weather-now-backend",
   "private": true,
   "version": "1.0.0",
-  "main": "dist/server.ts",
+  "main": "dist/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dilanluna/weather-now.git",
