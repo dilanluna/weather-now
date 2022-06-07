@@ -1,3 +1,4 @@
+import morgan from 'morgan';
 import { isHttpError, NotFound } from 'http-errors';
 import { OK, INTERNAL_SERVER_ERROR } from 'http-status';
 import { OwmApiClient } from 'openweathermap-api-client';
@@ -15,6 +16,8 @@ const client = new OwmApiClient({
   apiKey: process.env.OPENWEATHERMAP_API_KEY,
   units: 'metric',
 });
+
+app.use(morgan('dev'));
 
 app.get('/weather/current', async (req, res, next) => {
   try {
