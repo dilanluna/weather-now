@@ -1,5 +1,5 @@
 {
-  "name": "weather-now-backend",
+  "name": "@weather-now/backend",
   "private": true,
   "version": "1.0.0",
   "main": "dist/server.js",
