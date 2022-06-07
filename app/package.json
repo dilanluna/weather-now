@@ -1,5 +1,5 @@
 {
-  "name": "weather-now-app",
+  "name": "@weather-now/app",
   "private": true,
   "version": "1.0.0",
   "main": "src/index.ts",
