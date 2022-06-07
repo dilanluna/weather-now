@@ -13,7 +13,8 @@
   "scripts": {
     "start": "nodemon --exec ts-node --require dotenv/config src/server.ts",
     "build": "rimraf dist && tsc",
-    "test": "jest"
+    "test": "jest",
+    "release": "standard-version --tag-prefix @weather-now/backend@ --path ."
   },
   "dependencies": {
     "express": "^4.18.1",
@@ -37,5 +38,8 @@
     "setupFiles": [
       "dotenv/config"
     ]
+  },
+  "standard-version": {
+    "releaseCommitMessageFormat": "chore(release): backend v{{currentTag}}"
   }
 }
