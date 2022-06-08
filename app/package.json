@@ -17,7 +17,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest",
-    "release": "standard-version"
+    "release": "standard-version --tag-prefix @weather-now/app@ --path ."
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.2",
@@ -50,5 +50,8 @@
   },
   "jest": {
     "preset": "jest-expo"
+  },
+  "standard-version": {
+    "releaseCommitMessageFormat": "chore(release): app v{{currentTag}}"
   }
 }
