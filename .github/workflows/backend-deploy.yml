@@ -36,9 +36,6 @@ jobs:
         env:
           OPENWEATHERMAP_API_KEY: ${{ secrets.OPENWEATHERMAP_API_KEY }}
 
-      - name: 🔨 Build backend
-        run: npm run build:backend
-
       - name: 🚀 Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
